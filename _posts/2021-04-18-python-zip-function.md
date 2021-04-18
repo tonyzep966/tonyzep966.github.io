@@ -1,7 +1,6 @@
 ---
 title: Python zip()函数的应用
-categories:
- - Python
+categories: Python
 tags: Python, 基础
 ---
 
