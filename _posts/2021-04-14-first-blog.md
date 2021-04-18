@@ -2,7 +2,7 @@
 title: 列宁在1918台词
 categories:
  - 摘录
-tags: 摘录, 电影台词
+tags: 摘录 电影台词
 description: 死亡不属于工人阶级！
 ---
 
