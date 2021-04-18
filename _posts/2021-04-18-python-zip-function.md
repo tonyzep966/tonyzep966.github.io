@@ -2,6 +2,7 @@
 title: Python zip()函数的应用
 categories: Python
 tags: Python 基础
+description: Python的内置函数zip()
 ---
 
 在完成作业时，我需要将两个列表关联并排序，于是便学到了zip函数
