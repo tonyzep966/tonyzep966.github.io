@@ -4,7 +4,7 @@ categories: Python
 tags: Python, 基础
 ---
 
-{% highlight python %}
+```python
 name = [ "Manjeet", "Nikhil", "Shambhavi", "Astha" ]
 roll_no = [ 4, 1, 3, 2 ]
 marks = [ 40, 50, 60, 70 ]
@@ -18,4 +18,4 @@ mapped = set(mapped)
 # printing resultant values 
 print ("The zipped result is : ",end="")
 print (mapped)
-{% end highlight %}
+```
