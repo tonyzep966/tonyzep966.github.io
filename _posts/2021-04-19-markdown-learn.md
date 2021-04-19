@@ -69,12 +69,14 @@ ___粗斜体___
 ```
 
 效果如下：
+
 **粗体**  
 __粗体__  
 *斜体*  
 _斜体_  
 ***粗斜体***  
 ___粗斜体___
+
 ~~删除线~~
 
 ### 分割线
@@ -87,9 +89,7 @@ ___粗斜体___
 - - -
 ___
 ```
-
-抬头纹效果如下
-***
+博客的解释器暂时不支持分割线，在这里先不给出效果展示
 不建议使用除三个连续的`*`以外的分割线写法。
 
 ### 列表
@@ -112,7 +112,7 @@ ___
 ```
 
 列表使用空格或者是tab缩进来分级，而不是使用不同的符号。这里建议统一使用tab键进行缩进。
-同级的不同符号如果没有上级符号时，解释器将会在两种符号之间自动空出一行
+同级的不同符号如果没有上级符号时，有些解释器将会在两种符号之间自动空出一行
 
 效果如下：
 
@@ -152,13 +152,13 @@ ___
 * 图片支持本地链接支持相对路径和绝对路径，但并不灵活，文件的移动容易造成图片丢失，个人认为使用本地链接会破坏使用Markdown的原则，所以不建议使用,链接格式如下:
 
 ```markdown
-![Cute Dog](https://t.cn/A6PtI2tZ)
+![Cute Dog](https://pbs.twimg.com/media/EqPpSJxU8AEJetv?format=jpg&name=large)
 Format:![Title](link)
 ```
 
 效果如下：
 
-![Cute Dog](https://t.cn/A6PtI2tZ)
+![Cute Dog](https://pbs.twimg.com/media/EqPpSJxU8AEJetv?format=jpg&name=large)
 
 * 网址的链接更加简单:
 
@@ -265,7 +265,7 @@ fun picBase64(path: String): String {
 #### Emoji和Font-Awesome的支持
 
 * Emoji例子:
-:smile: :fa-github: :boy: :girl:
+:smile: :boy: :girl:
 * Font-Awesome是一款HTML+CSS框架，它允许你使用更多的图标，但很多Markdown编辑器在脱机状态下并不可以使用。要使用Font-Awesome，你必须在你的Markdown文档中加入下面的代码，放在文档中任何地方都可以，但我建议放在Markdown文档的末尾，便于修改与删除之余也不会影响美观。
 
 ```html{.line-numbers}
@@ -277,8 +277,8 @@ fun picBase64(path: String): String {
 ```
 
 测试一下:
-<i class = "fa fa-weibo"></i> [**966曹長**](https://weibo.com/zep966)
-我的编辑器内置了Font-Awesome V4，可以脱机预览，如果你使用上面的链接则是V5的版本，需要注意的是，V4使用的fa前缀在V5中已更改为fas和fab。
+<i class = "fa fa-weibo"></i> [**CyNoko_966**](https://weibo.com/zep966)
+我的编辑器插件内置了Font-Awesome V4，可以脱机预览，如果你使用上面的链接则是V5的版本，需要注意的是，V4使用的fa前缀在V5中已更改为fas和fab。
 
 #### 上标、下标和脚注等
 > 注：目前博客的markdown解释器还不支持上下标和标记，笔者在这里暂且不附其效果展示
@@ -331,7 +331,7 @@ Markdown是可以转换为HTML的，所以我们可以使用HTML标签来弥补M
 
 #### 字体大小与颜色
 
-如果你想改变字体的大小或颜色，可以使用`<font> </font>`标签，但没有特殊需要通常不建议使用，以保持Markdown文档的简洁整齐型。
+如果你想改变字体的大小或颜色，可以使用`<font> </font>`标签，但没有特殊需要通常不建议使用，以保持Markdown文档的简洁与整齐。
 
 ## Markdown进阶要素
 
