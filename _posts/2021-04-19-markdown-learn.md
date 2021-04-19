@@ -278,6 +278,7 @@ fun picBase64(path: String): String {
 
 测试一下:
 <i class = "fa fa-weibo"></i> [**CyNoko_966**](https://weibo.com/zep966)
+
 我的编辑器插件内置了Font-Awesome V4，可以脱机预览，如果你使用上面的链接则是V5的版本，需要注意的是，V4使用的fa前缀在V5中已更改为fas和fab。
 
 #### 上标、下标和脚注等
