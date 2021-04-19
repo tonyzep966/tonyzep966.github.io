@@ -152,13 +152,13 @@ ___
 * 图片支持本地链接支持相对路径和绝对路径，但并不灵活，文件的移动容易造成图片丢失，个人认为使用本地链接会破坏使用Markdown的原则，所以不建议使用,链接格式如下:
 
 ```markdown
-![Cute Dog](https://pbs.twimg.com/media/EqPpSJxU8AEJetv?format=jpg&name=large)
+![Cute Little Girl](https://pbs.twimg.com/media/EqPpSJxU8AEJetv?format=jpg&name=large)
 Format:![Title](link)
 ```
 
 效果如下：
 
-![Cute Dog](https://pbs.twimg.com/media/EqPpSJxU8AEJetv?format=jpg&name=large)
+![Cute Little Girl](https://pbs.twimg.com/media/EqPpSJxU8AEJetv?format=jpg&name=large)
 
 * 网址的链接更加简单:
 
