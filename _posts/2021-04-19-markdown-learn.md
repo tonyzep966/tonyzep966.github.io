@@ -3,14 +3,9 @@ title: "Markdown学习"
 categories: Markdown
 tags: Markdown 基础
 description: Markdown学习
-toc:
-  depth_from: 2
-  depth_to: 6
-  ordered: true
 ---
 # Markdown笔记  
 
-[toc]
 ## Markdown基础要素  
 
 ### 写在前面
@@ -53,6 +48,10 @@ eg. 这里是第二行，也可以直接空一行开始新的段落
 ### 引用
 
 引用文本只需要这样：
+```markdown
+> When life gives you lemons, squeeze lemonade into eyes.
+```
+效果：
 > When life gives you lemons, squeeze lemonade into eyes.
 
 ### 字体格式
@@ -114,6 +113,7 @@ ___
 
 列表使用空格或者是tab缩进来分级，而不是使用不同的符号。这里建议统一使用tab键进行缩进。
 同级的不同符号如果没有上级符号时，解释器将会在两种符号之间自动空出一行
+
 效果如下：
 
 * Auf Wanderung
@@ -139,6 +139,11 @@ ___
 3. But as the riper should by time decease
 ```
 
+效果如下：
+1. From fairest creatures we desire increase,
+2. That thereby beauty's rose might never die,
+3. But as the riper should by time decease
+
 这里建议尽量在 "数字."之后加一个空格，否则某些解释器可能会不识别，成为普通的一行文字而不是列表。
 注意，列表结束后需要空出一行，否则会与下方的内容连续。尽管标题通常不会被编辑器默认连续，但我还是建议统一手动空出一行。
 
@@ -151,6 +156,8 @@ ___
 Format:![Title](link)
 ```
 
+效果如下：
+
 ![Cute Dog](https://t.cn/A6PtI2tZ)
 
 * 网址的链接更加简单:
@@ -161,7 +168,7 @@ Format:![Title](link)
 
 链接成功: [GitHub](http://github.com)
 
-* 还有一种特殊的图片链接方法，使用图片的base64值允许你在脱机状态下也可以浏览图片，又不会使你的文档拖泥带水。这里也可以直接使用base64，但是base64字符串太长，放在文字中间排版会看起来很糟糕，所以这里我们使用内部链接，将需要链接的base64字符串放在Markdown文档结尾，这里就不做展示了:
+* 还有一种特殊的图片链接方法，使用图片的base64值允许你在脱机状态下也可以浏览图片，又不会使你的文档拖泥带水。这里也可以直接使用base64，但是base64字符串太长，放在文字中间排版会看起来很糟糕，所以这里我们使用内部链接，并且将需要链接的base64字符串放在Markdown文档结尾。请在新的页面打开图片，即可在地址栏获取该图片的base64值，这里就不做展示了:
 
 ```markdown
 ![Mini Challenge][Mini64]
@@ -176,15 +183,16 @@ Format:![Title](link)
 <tonyzep966@outlook.com>
 ```
 
+效果如下：
 <tonyzep966@outlook.com>
 
 这是一种自动链接的方式，Markdown会将它自动解释为超链接，也同样适用于网址:
 
 ```markdown
-<http://github.com>
+<https://github.com>
 ```
-
-<http://github.com>
+效果如下：
+<https://github.com>
 
 ### 代码插入与高亮
 
@@ -209,44 +217,55 @@ fun picBase64(path: String): String {
 }
 ```
 
-这里的`{.line-numbers}`是Markdown Preview Enhanced(简称MPE)插件的扩展特性。
+这里的`{.line-numbers}`是VSCode的Markdown Preview Enhanced(简称MPE)插件的扩展特性。
 你也可以使用`<code># 没有用的标题</code>`来在行内插入，或者是`<pre></pre>`来进行整段插入，但要进行代码高亮就相对麻烦了许多。
 
 ### 任务列表
 
-任务列表如下:  
-
+任务列表是在每项之前附有一个勾选框的特殊列表:  
+```markdown
+- [x] <del>Create Team</del>
+- [ ] **New Project**
+```
+效果如下：
 - [x] <del>Create Team</del>
 - [ ] **New Project**
 
-任务列表语法对空格的要求比较严格，其行内支持多种文字格式。
+任务列表语法对空格的要求比较严格，如上面所展示的那样，其行内支持多种文字格式。
 
 ### 表格
+> 注：目前博客的markdown解释器还不支持表格，笔者在这里暂且不附其效果展示
 
 表格的写法较为麻烦，但也十分直观，有三种对齐方式表示，其中 '-'的个数不限:  
+```markdown
 | Left | Right | Middle |
 | :--- | ----: | :----: |
 | 1    |     2 |   3    |
 | 4    |     5 |   6    |
+```
 
 下面是两种MPE插件支持的写法: 
 左右合并单元格的写法：
+```markdown
 | a   |    b |
 | --- | ---: |
 | >   |    1 |
 | 1   |      |
-
+```
+效果如下：
+```markdown
 上下合并单元格的写法：
 |   a   |   b   |
 | :---: | :---: |
 |   1   |   2   |
 |   ^   |   4   |
+```
 ### 符号与图标
 
 #### Emoji和Font-Awesome的支持
 
 * Emoji例子:
-:smile: :fa-car: :boy: :girl:
+:smile: :fa-github: :boy: :girl:
 * Font-Awesome是一款HTML+CSS框架，它允许你使用更多的图标，但很多Markdown编辑器在脱机状态下并不可以使用。要使用Font-Awesome，你必须在你的Markdown文档中加入下面的代码，放在文档中任何地方都可以，但我建议放在Markdown文档的末尾，便于修改与删除之余也不会影响美观。
 
 ```html{.line-numbers}
@@ -262,9 +281,10 @@ fun picBase64(path: String): String {
 我的编辑器内置了Font-Awesome V4，可以脱机预览，如果你使用上面的链接则是V5的版本，需要注意的是，V4使用的fa前缀在V5中已更改为fas和fab。
 
 #### 上标、下标和脚注等
+> 注：目前博客的markdown解释器还不支持上下标和标记，笔者在这里暂且不附其效果展示
 
-* 上标: `1^st^` 1^st^
-* 下标: `H~2~O` H~2~O
+* 上标: `1^st^`
+* 下标: `H~2~O` 
 * 脚注:
 > だが南に向いた斜面には葡萄[^1]の房[^2]が青々と支柱にみのって、
 その祝福された内部に情熱と密[^3]かな慰めとを秘めている。
@@ -294,12 +314,10 @@ fun picBase64(path: String): String {
 > The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.
 
 * 标记:
-
+标记是一种类似荧光笔效果的标记，目前博客还不支持，它的代码如下：
 ```markdown
 ==我说的都是重点==
 ```
-
-==我说的都是重点==
 
 * 使用反斜杠`\`在你的文档中加入特殊符号，例如\#。
 
