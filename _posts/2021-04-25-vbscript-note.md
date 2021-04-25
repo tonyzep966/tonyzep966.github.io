@@ -5,7 +5,7 @@ tags: VB
 description: 摸索着写出来的作业，我感觉还有很多需要改进的地方。
 ---
 
-```VB
+```VBScript
 Class Course
     Private courseName
     Private courseScore
