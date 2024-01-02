@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source "http://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 
@@ -14,4 +14,7 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
+  gem 'jekyll-archives'
 end
+
+gem "webrick", "~> 1.8"

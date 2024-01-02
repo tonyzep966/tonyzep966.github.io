@@ -13,16 +13,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+title: Tony's Strawberry Fields
+subtitle: "Let me take you down, 'cause I'm going to..."
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+url: "https://tonyzep966.github.io" # the base hostname & protocol for your site
 twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+github_username: tonyzep966
+minimal_mistakes_skin: dirt
 search: true
+excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
@@ -56,11 +59,12 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-archives
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Tony Dang"
+  avatar : "/assets/images/bio-photo.png"
+  bio    : "Software Engineer"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -99,6 +103,7 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: "_pages"
