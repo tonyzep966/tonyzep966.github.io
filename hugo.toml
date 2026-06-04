@@ -1,0 +1,12 @@
+baseURL = 'https://tonyzep966.github.io/'
+locale = 'en-us'
+title = 'Tony_966'
+theme = ["github.com/D-Sketon/hugo-theme-reimu"]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[markup.highlight]
+guessSyntax = true
+noClasses = false
