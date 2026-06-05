@@ -1,9 +1,7 @@
 ---
 title: 'Hello World'
-banner: https://www.gstatic.com/webp/gallery/1.sm.webp
-cover: https://www.gstatic.com/webp/gallery/5.sm.webp
-date: 2023-03-15T11:00:00-07:00
-lastmod: 2023-03-15T11:00:00-07:00
+date: 2026-06-04T11:00:00-08:00
+lastmod: 2026-06-04T11:00:00-08:00
 ---
 
-💘 博麗 霊夢 💘
+第一篇文章，暂时留作占位，后续写点东西进去。
