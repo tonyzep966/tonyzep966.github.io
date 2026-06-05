@@ -10,6 +10,7 @@ lastmod: 2026-06-05T20:11:32+08:00
 
 - 站名： Tony_966
 - 站长： Tony_966
+- 网址： https://tonyzep966.github.io/
 
 ## 申请方法
 
